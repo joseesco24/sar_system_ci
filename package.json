@@ -1,0 +1,39 @@
+{
+	"name": "sar_sysyem_ci",
+	"version": "v1.0.0",
+	"description": "The SAR Core Microservice is the incharge of provide some of the most important capabilities of the SAR system, as wastes collect request management, waste management and clients management",
+	"author": {
+		"email": "josed.escobar@outlook.com",
+		"name": "joseesco24"
+	},
+	"readme": "readme.md",
+	"scripts": {
+		"format": "prettier \"./src/**/*.{yaml,yml,js}\" --write",
+		"commitmsg": "bash ./.husky/commit-msg.sh",
+		"precommit": "bash ./.husky/pre-commit.sh",
+		"postinstall": "npx husky install",
+		"k6-suite": "bash ./src/k6/orchestator.sh"
+	},
+	"prettier": {
+		"trailingComma": "es5",
+		"useTabs": true,
+		"semi": false,
+		"singleQuote": false,
+		"proseWrap": "preserve",
+		"quoteProps": "consistent",
+		"bracketSpacing": false,
+		"bracketSameLine": false,
+		"arrowParens": "always",
+		"insertPragma": false,
+		"endOfLine": "lf",
+		"printWidth": 180,
+		"rangeStart": 0
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.7.3",
+		"@commitlint/cli": "^19.3.0",
+		"@commitlint/config-conventional": "^19.2.2",
+		"husky": "^9.0.11",
+		"prettier": "^3.2.5"
+	}
+}
