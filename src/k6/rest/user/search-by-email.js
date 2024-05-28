@@ -9,8 +9,8 @@ export const options = {
 	thresholds: {
 		checks: [{threshold: "rate == 1.00", abortOnFail: true}],
 	},
-	duration: "30s",
-	vus: 30,
+	duration: "120s",
+	vus: 20,
 }
 
 export default function testSuite() {
